@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Logo Image -->
+
+    <!-- App Name -->
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="97dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/logo_image" />
+
+    <TextView
+        android:id="@+id/app_name_text"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Greeting Message -->
+    <TextView
+        android:id="@+id/greeting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="200dp"
+        android:text="Welcome to \nLearning Spanish"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <!-- Lessons Button -->
+    <Button
+        android:id="@+id/lessons_button"
+        android:layout_width="265dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/greeting_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="startLessons"
+        android:text="Start Lessons"
+        android:textSize="20dp" />
+
+    <!-- Vocabulary Button -->
+    <Button
+        android:id="@+id/vocabulary_button"
+        android:layout_width="265dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/lessons_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="startVocabulary"
+        android:text="Learn Vocabulary"
+        android:textSize="20dp" />
+
+</RelativeLayout>
